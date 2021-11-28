@@ -115,6 +115,7 @@ class Refeicao {
     // MARK: - Atributos
     var nome: String
     var felicidade: String
+    var itens: Array<Item> = []
     
     // MARK: - Construtor
     
@@ -122,13 +123,37 @@ class Refeicao {
         self.nome = nome
         self.felicidade = felicidade
     }
+    
+    // MARK: - Métodos
+    
+    func totalDeCalorias() -> Double {
+        var total = 0.0
+        
+        for item in itens{
+            total += item.calorias
+        }
+        
+        return total
+    }
 }
 
-let refeicao = Refeicao(nome: "Macarrao", felicidade: "5")
-let refeicao2 = Refeicao(nome: "Feijao", felicidade: "3")
+class Item {
+    var nome: String
+    var calorias: Double
+    
+    init(nome: String, calorias: Double){
+        self.nome = nome
+        self.calorias = calorias
+    }
+}
 
-print(refeicao.nome)
-print(refeicao.felicidade)
+let arroz = Item(nome: "Arroz", calorias: 51.0)
+let feijao = Item(nome: "Feijao", calorias: 90.0)
+let contraFile = Item(nome: "Contra Filé", calorias: 287.0)
 
-print(refeicao2.nome)
-print(refeicao2.felicidade)
+let refeicao = Refeicao(nome: "Almoço", felicidade: "5")
+refeicao.itens.append(arroz)
+refeicao.itens.append(feijao)
+refeicao.itens.append(contraFile)
+
+print(refeicao.totalDeCalorias())
