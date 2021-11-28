@@ -59,53 +59,76 @@ let total2 = calculaCalorias(totalDeCalorias: [50.5, 100, 400])
 // Classes
 
 // Atributos opcionais
-class Refeicao {
-    var nome: String?
-    var felicidade: String?
-}
+//class Refeicao {
+//    var nome: String?
+//    var felicidade: String?
+//}
 
-let refeicao = Refeicao()
-refeicao.nome = "Macarrao"
+//let refeicao = Refeicao()
+//refeicao.nome = "Macarrao"
 
-print(refeicao.nome)
+//print(refeicao.nome)
 // imprime => Optional("Macarrao")
 
 //Forced Unwrap => quando colocamos um ponto de exclamação estamos forçando a extração do valor desta variável
 // Se a variavel for nula haverá erro! ( má pratica)
-print(refeicao.nome!)
+//print(refeicao.nome!)
 // imprime => Macarrao
 
 // Maneira com if pouco usada
-if refeicao.nome != nil {
-    print(refeicao.nome!)
-}
+//if refeicao.nome != nil {
+//    print(refeicao.nome!)
+//}
 
 // Boas praticas para extrair valor da variavel
 
 // o nome só vai existir dentro do if (dentro do escopo)
-if let nome = refeicao.nome {
-    print(nome)
-}
+//if let nome = refeicao.nome {
+//    print(nome)
+//}
 
 // guard let
 // Deve está dentro de uma funcao
 // nome vai existir fora do guard em toda a funcao
-func exibeNomeDaRefeicao() {
-    guard let nome = refeicao.nome else {
-        return
-    }
+//func exibeNomeDaRefeicao() {
+//    guard let nome = refeicao.nome else {
+//        return
+//    }
     
-    print(nome)
-}
+//    print(nome)
+//}
 
-exibeNomeDaRefeicao()
+//exibeNomeDaRefeicao()
 
 // é opcional pois podemos colocar uma string que não converte em um int
-let numero = Int("5")
+//let numero = Int("5")
 
-if let n = numero {
-    print(n)
-} else {
-    print("Erro ao converter String para Int")
+//if let n = numero {
+//    print(n)
+//} else {
+//    print("Erro ao converter String para Int")
+//}
+
+
+class Refeicao {
+    
+    // MARK: - Atributos
+    var nome: String
+    var felicidade: String
+    
+    // MARK: - Construtor
+    
+    init(nome: String, felicidade: String) {
+        self.nome = nome
+        self.felicidade = felicidade
+    }
 }
 
+let refeicao = Refeicao(nome: "Macarrao", felicidade: "5")
+let refeicao2 = Refeicao(nome: "Feijao", felicidade: "3")
+
+print(refeicao.nome)
+print(refeicao.felicidade)
+
+print(refeicao2.nome)
+print(refeicao2.felicidade)
