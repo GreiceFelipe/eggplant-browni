@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A084AEF27578BA700D051FA /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A084AEE27578BA700D051FA /* RefeicoesTableViewController.swift */; };
 		9A7705582753D1B600F33800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7705572753D1B600F33800 /* AppDelegate.swift */; };
 		9A77055A2753D1B600F33800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7705592753D1B600F33800 /* SceneDelegate.swift */; };
 		9A77055C2753D1B600F33800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77055B2753D1B600F33800 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A084AEE27578BA700D051FA /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		9A7705542753D1B600F33800 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7705572753D1B600F33800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A7705592753D1B600F33800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				9A77055D2753D1B600F33800 /* Main.storyboard */,
+				9A084AEE27578BA700D051FA /* RefeicoesTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				9ACEF8A127544A600030030E /* Item.swift in Sources */,
 				9A77055C2753D1B600F33800 /* ViewController.swift in Sources */,
 				9A7705582753D1B600F33800 /* AppDelegate.swift in Sources */,
+				9A084AEF27578BA700D051FA /* RefeicoesTableViewController.swift in Sources */,
 				9A77055A2753D1B600F33800 /* SceneDelegate.swift in Sources */,
 				9ACEF89F275449F50030030E /* Refeicao.swift in Sources */,
 			);
